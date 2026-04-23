@@ -88,6 +88,7 @@ export const defaultConfig: ScoutServerConfig = {
       'node.attr.name=apiIntegrationTestNode',
       'xpack.security.authc.api_key.enabled=true',
       'xpack.security.authc.token.enabled=true',
+      'xpack.security.authc.token.timeout=1h',
       `xpack.security.authc.realms.saml.${MOCK_IDP_REALM_NAME}.order=0`,
       `xpack.security.authc.realms.saml.${MOCK_IDP_REALM_NAME}.idp.metadata.path=${STATEFUL_IDP_METADATA_PATH}`,
       `xpack.security.authc.realms.saml.${MOCK_IDP_REALM_NAME}.idp.entity_id=${MOCK_IDP_ENTITY_ID}`,
